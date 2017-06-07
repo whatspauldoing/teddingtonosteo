@@ -1,0 +1,37 @@
+/*
+Theme Name: Teddington Osteopaths
+Theme URI: http://teddingtonosteopaths.co.uk
+Description: A bespoke theme for the business Teddington Osteopaths
+Author: Paul Seymour
+Author URI: 
+Version: 1.0
+Tags: responsive, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
+*/
+/*
+
+Blue: #0077c8
+Yellow: #ffc72c
+
+*/
+
+
+@import url('bootstrap/css/bootstrap.css'); 
+@import url('bootstrap/css/bootstrap-responsive.css'); 
+body { 
+     padding-top: 60px; 
+     padding-bottom: 40px; 
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+p {
+    font-family: 'Average', serif;
+}
