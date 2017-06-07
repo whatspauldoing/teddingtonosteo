@@ -10,7 +10,7 @@
         <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <?php wp_enqueue_script("jquery"); ?>
+        
         <?php wp_head(); ?>
     </head>
     <body>
@@ -45,5 +45,3 @@
                     </div><!--/.nav-collapse -->
             </div>
         </div>
-
-  <div class="container">
