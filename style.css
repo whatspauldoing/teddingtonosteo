@@ -20,7 +20,8 @@ Yellow: #ffc72c
 
 
 @import url('bootstrap/css/bootstrap.css'); 
-@import url('bootstrap/css/bootstrap-responsive.css'); 
+@import url('bootstrap/css/bootstrap-responsive.css');
+@import url('bootstrap/css/bootstrap-grid.css');
 @import url('fontawesome/css/font-awesome.css'); 
 body { 
 
@@ -43,6 +44,12 @@ h1, h2, h3, h4, h5 {
     font-size:210%;
 }
 
+h2 {
+    color:#0077c8 !important;
+    margin:10px 0px 0px 20px;
+    font-size:150%;
+}
+
 h3 {
     font-size:150%;
 }
@@ -50,6 +57,18 @@ h3 {
 p {
     font-family: 'Average', serif;
     font-size:110%;
+}
+
+.content ul {
+    margin-left:40px;
+    
+}
+.content li {
+    font-family: 'Average', serif;
+    font-size:110%;
+    color:#333;
+    list-style-type: square;
+    margin:5px 0px;
 }
 
 #topbar {
@@ -173,9 +192,9 @@ p {
 .content p {
     display: block;
     float:left;
-    min-width:600px;
-    max-width:600px;
-    margin:20px 0px 0px 20px;
+    min-width:560px;
+    max-width:560px;
+    margin:10px 0px 10px 20px;
 }
 
 .content hr {
@@ -183,4 +202,47 @@ p {
     clear:both;
     border-top: solid 2px #ffc72c;
     margin-top:20px;
+}
+
+.headshot {
+    background-color:#EDF6FB !important;
+    display:block;
+    margin-top:10px;
+}
+
+.post-thumb {
+    background-color:#EDF6FB !important;
+    width:100%;
+    height:100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.big-headshot {
+    background-color:#EDF6FB !important;
+    display:block;
+    margin-top:25px;
+}
+
+.team-member {
+    margin:0px 10px;
+    text-align: center;
+    line-height:25px;
+}
+
+.team-job {
+    text-align: center;
+    width:100%;
+    display: block;
+    min-width:100% !important;
+    max-width:100% !important;
+    margin:0px 0px 0px 0px !important;    
+}
+
+.image-clip {
+    width:auto;
+    height:200px;
+    overflow:hidden;
+    margin-top:10px;
+    padding:auto;
 }
