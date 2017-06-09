@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <img class="featured" src="" />
-    <div class="container-fluid white page-content">
+    <div class="container-fluid white no-top-gap-page-content">
         <div class="container">
             <h1 class="blue center"><?php the_title(); ?></h1>
         </div>

@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h2 {
-    color:#0077c8 !important;
+    color:#333 !important;
     margin:10px 0px 0px 20px;
     font-size:150%;
 }
@@ -54,9 +54,21 @@ h3 {
     font-size:150%;
 }
 
+h4 {
+    font-size:120%;
+    color:#333 !important;
+    margin:12px 0px !important;
+}
+
 p {
     font-family: 'Average', serif;
     font-size:110%;
+}
+
+.wpcf7-recaptcha {
+    display:block !important;
+    float:left !important;
+    margin:0px 0px 0px 20px;
 }
 
 .content ul {
@@ -171,6 +183,14 @@ p {
     min-height:100%;
 }
 
+.no-top-gap-page-content {
+    background:#fff;
+    margin-top:-12px;
+    min-height:100%;
+    z-index:-100;
+}
+
+
 .content {
     max-width:900px;
     margin:0 auto;
@@ -182,6 +202,13 @@ p {
 }
 
 .content h1 {
+    float:left;
+    min-width:230px;
+    max-width:230px;
+    margin:10px 10px 20px 20px;
+    text-align: right;
+}
+.content h4 {
     float:left;
     min-width:230px;
     max-width:230px;
@@ -245,4 +272,51 @@ p {
     overflow:hidden;
     margin-top:10px;
     padding:auto;
+}
+
+#srm_gmp_embed_1 {
+    padding:0px 0px;
+    margin:5px 20px !important;
+}
+
+.wpcf7 {
+    margin-top:20px !important;
+}
+
+input[type="text"].wpcf7-form-control, input[type="tel"].wpcf7-form-control, input[type="email"].wpcf7-form-control {
+    width:100%;
+    border-radius:0px !important;
+    line-height:20px !important;
+    height:30px !important;
+}
+
+.wpcf7-textarea {
+    width:100%;
+    border-radius:0px !important;
+    height:100px !important;
+}
+
+.wpcf7-submit {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    border:none;
+    font-family: 'Didact Gothic', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    background: #0077c8;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.wpcf7-submit:hover {
+  background: #ffc72c;
+  text-decoration: none;
+}
+
+.wpcf7-validation-errors, .wpcf7-spam-blocked, .wpcf7-not-valid-tip, .wpcf7-mail-sent-ok {
+    border:none !important;
+    color:#0077c8 !important;
+    font-family: 'Didact Gothic', sans-serif;
+    float:right;
 }
