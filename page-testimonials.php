@@ -1,4 +1,4 @@
-<?php /* Template Name: Post List */ ?>
+<?php /* Template Name: Testimonials List */ ?>
 <?php get_header(); ?>
     <img class="featured" src="<?php the_post_thumbnail_url() ?>" />
     <div class="container-fluid white page-content">
@@ -9,16 +9,17 @@
             <?php 
                 global $post;
                 $id = get_the_ID();
-                $team_type = get_post_meta($id,"team_type", true);
-                $args = ['category_name' => 'teddingtonosteopathsnews', 'numberposts' => -1, 'orderby' => 'menu_order', 'order' => 'ASC' ];
+                $args = ['category_name' => 'testimonials', 'numberposts' => -1, 'orderby' => 'menu_order', 'order' => 'ASC' ];
                 $myposts = get_posts($args);
                 echo "<div class='row yellow-top' style='margin-bottom:20px;'>";
                 $count = 1;
                 foreach ( $myposts as $post ) : setup_postdata( $post );
-                    echo "<div class='col'>";
-                    echo '<div class="image-clip"><a href="' . get_the_permalink() . '"><div class="post-thumb" style="background-image:url(\'' . get_the_post_thumbnail_url() . '\');"></div></a></div>';
-                    echo '<h3 class="team-member"><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></h3>';
-                    echo '<p class="team-job">' . get_post_meta(get_the_ID(),"job_title", true) . '</p>';
+                    echo "<div class='col testimonial'>";
+                    echo '<p class="testimonial-text"><i class="fa fa-quote-left" aria-hidden="true" style="margin:10px 10px 0px 0px; color:#aaa;"></i>' . get_the_content() . '<i class="fa fa-quote-right" aria-hidden="true" style="margin:0px 0px 10px 10px; color:#aaa;"></i></p>';
+                    echo '<h3 class="testimonial-name blue">' . get_post_meta(get_the_ID(),"client_name", true) . '</h3>';
+                    echo '<h4 class="testimonial-job blue">' . get_post_meta(get_the_ID(),"client_occupation", true) . '</h4>';
+                    echo '<span class="testimonial-location">' . get_post_meta(get_the_ID(),"client_location", true) . '</span>';
+                    echo '<div class="clearfix"></div>';
                     echo "</div>";
                     if($count >= 4) {
                         echo "</div><div class='row yellow-top' style='margin-bottom:20px; margin-top:20px;'>";

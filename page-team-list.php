@@ -55,16 +55,4 @@
                 wp_reset_postdata();
             ?>
         </div>
-    </div>
-    <script>
-       // jQuery(document).ready(function() {
-    //        jQuery("hr").before("<div class='clearfix'></div>");
-    //        jQuery(".content > h1").each(function() {
-    //            from = parseInt(jQuery(this).nextAll("hr:first").position().top); 
-    //            to = parseInt(jQuery(this).position().top);
-    //            newHeight = from - to;
-    //            jQuery(this).height(newHeight);
-    //        });
-    //    });
-    </script>
 <?php get_footer(); ?>
