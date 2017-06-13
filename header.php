@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Average|Didact+Gothic" rel="stylesheet">
-        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -16,7 +15,7 @@
         <div class="container" id="fixed-top">
             <div class="container" id="topbar">
                 <div class="topbar-title">
-                    <img src="/wp-content/uploads/2017/06/topbar-logo.png" class='topbar-logo' /><h1><?php bloginfo('name') ?></h1>
+                    <a href='/'><img src="/wp-content/uploads/2017/06/topbar-logo.png" class='topbar-logo' /><h1><?php bloginfo('name') ?></h1></a>
                 </div>
                 <div class="topbar-contact">
                     <i class="fa fa-facebook-square white social" aria-hidden="true"></i>
@@ -32,7 +31,7 @@
                     <a href='/contact-us#map'><img src='/wp-content/uploads/2017/06/find-us.png' class='find-us'/><h3>Find us</h3></a>
                 </div>          
             </div>
-            <div class="navbar navbar-inverse">
+            <div class="navbar navbar-inverse sitewide-nav">
                 <div class="navbar-inner">
                         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                             <span class="icon-bar"></span>

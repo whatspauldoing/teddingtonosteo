@@ -62,7 +62,7 @@ h4 {
 
 p {
     font-family: 'Average', serif;
-    font-size:110%;
+    font-size:120%;
 }
 
 .wpcf7-recaptcha {
@@ -206,6 +206,7 @@ p {
     padding:0px !important;
     margin:0px 10px;
     cursor: pointer;
+    font-size:120%;
 }
 
 .menu li a:hover {
@@ -216,6 +217,7 @@ p {
     margin:0px 10px;
     cursor: pointer;
     text-decoration: none;
+    font-size:120%;
 }
 
 .menu li {
@@ -256,10 +258,118 @@ p {
     left:0;
 }
 
+.hp-logo {
+    min-width:400px;
+    width:100%;
+    height:auto;
+    min-height:400px;
+    margin:100px 0px;
+}
+.hp-logo img {
+    width:400px;
+    height:400px;
+    margin:100px 50px;
+}
+.hp-featured {
+    position:absolute;
+    z-index:-100;
+    top:0;
+    left:0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    text-align: center;
+    min-height:600px;
+}
+
+.hp-link {
+    display:block;
+    min-width:100%;
+    background-color:#0077c8;
+    min-height:100px;
+    color:#fff;
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    vertical-align: middle;
+    font-size:200%;
+    padding:40px 0px;
+    margin-top:10px;
+    line-height:40px;
+}
+
+.hp-link:hover {
+    display:block;
+    min-width:100%;
+    background-color:#ffc72c;
+    min-height:100px;
+    color:#fff;
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    vertical-align: middle;
+    font-size:200%;
+    padding:40px 0px;
+    margin-top:10px;
+    line-height:40px;
+}
+
+
+.tweets {
+    display:block;
+    float:left;
+    max-width:600px;
+}
+
+.aptf-tweets-wrapper {
+    max-width:600px;
+}
+
+.aptf-single-tweet-wrapper {
+    max-width:280px;
+    display:block;
+    float:left;
+    clear:none !important;
+    margin:10px;
+    border-bottom: solid 1px #ffc72c;
+    border-right: solid 1px #ffc72c;
+    padding: 20px;
+}
+.aptf-tweet-content {
+    font-family: 'Average', serif;
+    font-size:120%;
+    color:#333;
+}
+
+.aptf-tweet-date {
+    display:block;
+    float:right !important;
+    max-width:200px;
+    margin-left:20px;
+}
 .page-content {
     background:#fff;
     border-top: solid 2px #ffc72c;
     margin-top:250px;
+    min-height:100%;
+}
+
+.homepage-nav {
+    margin:680px 0px 0px 0px;
+    min-height:40px;
+    background-color:#0077c8;
+}
+
+.homepage-nav .navbar {
+    margin:0px auto;
+    min-height:40px;
+    background-color:#0077c8;
+    max-width:600px;
+}
+
+.home-page-content {
+    background:#fff;
+    border-top: solid 2px #ffc72c;
+    margin-top:0px;
     min-height:100%;
 }
 
@@ -283,7 +393,6 @@ p {
     min-height:100%;
     z-index:-100;
 }
-
 
 .content {
     max-width:900px;
@@ -349,6 +458,20 @@ p {
     margin:0px 10px;
     text-align: center;
     line-height:25px;
+}
+
+.hp-talk {
+    float:left;
+    width:21%;
+    margin:0px 8px;
+    padding:0px 10px 10px 10px;
+    background-color:#fff;
+    border-bottom: solid 1px #ffc72c;
+    border-right: solid 1px #ffc72c;
+}
+
+.hp-talk>.team-member {
+    margin-top:10px !important;
 }
 
 .team-job {
