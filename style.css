@@ -72,6 +72,8 @@ p {
 }
 
 .content ul {
+    display:block;
+    float:left;
     margin-left:40px;
     
 }
@@ -84,7 +86,7 @@ p {
 }
 #fixed-top {
     position:fixed;
-    top:30;
+    top:0;
     left:0;
     z-index:2000;
     min-width:100%;
@@ -152,32 +154,22 @@ p {
 
 .social {
     font-size:200%;
-    margin:15px 10px 0px 0px;
+    margin:17px 5px 0px 5px;
 }
 
-.email-us {
+.sml-side-pad {
+    padding-right:5px;
+    padding-left:5px;
+}
+
+.email-us, .find-us, .call-us {
     float:left;
-    width:30px;
-    height:30px;
+    width:28px;
+    height:28px;
     display: block;
     margin:15px 0px 0px 10px;
 }
 
-.call-us {
-    float:left;
-    width:30px;
-    height:30px;
-    display: block;
-    margin:15px 0px 0px 10px;
-}
-
-.find-us {
-    float:left;
-    width:30px;
-    height:30px;
-    display: block;
-    margin:15px 0px 0px 10px;
-}
 
 .nav, .navbar, .navbar-inverse, .navbar-inner {
     background-color: rgba(0,0,0,0) !important;
@@ -233,7 +225,7 @@ p {
     top: 0;
     left: 0;
     z-index:100;
-    margin-top:35px;
+    margin-top:25px;
     margin-left:15px;
     border-bottom:solid 10px #0077c8;
     display:none;
@@ -251,11 +243,18 @@ p {
     padding:0px 0px 10px 0px !important;
 }
 
+.sub-arrow {
+    display:none;
+    float:left;
+}
+
 .featured {
     position:absolute;
     z-index:-100;
-    top:0;
+    top:-300;
     left:0;
+    width:100%;
+    height:auto;
 }
 
 .hp-logo {
@@ -263,24 +262,11 @@ p {
     width:100%;
     height:auto;
     min-height:400px;
-    margin:100px 0px;
+    margin-top:50px;
 }
 .hp-logo img {
     width:400px;
     height:400px;
-    margin:100px 50px;
-}
-.hp-featured {
-    position:absolute;
-    z-index:-100;
-    top:0;
-    left:0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width:100%;
-    height:100%;
-    text-align: center;
-    min-height:600px;
 }
 
 .hp-link {
@@ -354,7 +340,7 @@ p {
 }
 
 .homepage-nav {
-    margin:680px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
     min-height:40px;
     background-color:#0077c8;
 }
@@ -452,6 +438,8 @@ p {
     background-color:#EDF6FB !important;
     display:block;
     margin-top:10px;
+    width:100%;
+    height:auto;
 }
 
 .team-member {
@@ -470,6 +458,14 @@ p {
     border-right: solid 1px #ffc72c;
 }
 
+#talk {
+    display:block;
+}
+
+#testimonials {
+    display:none;
+}
+
 .hp-talk>.team-member {
     margin-top:10px !important;
 }
@@ -486,7 +482,7 @@ p {
 .testimonial {
     padding:10px;
     border:solid 1px #ddd;
-    margin:10px;
+    margin:10px 0px;
 }
 
 .testimonial-name {
@@ -584,4 +580,220 @@ input[type="text"].wpcf7-form-control, input[type="tel"].wpcf7-form-control, inp
     color:#0077c8 !important;
     font-family: 'Didact Gothic', sans-serif;
     float:right;
+}
+
+@media (max-width: 992px) {
+    body {
+        padding-right:0px;
+        padding-left:0px;
+    }
+    #talk {
+        display:none;
+    }
+
+    #testimonials {
+        display:block;
+    }    
+    
+    #tel, #email, #find {
+        display:none;
+    }
+    .call-us {
+        margin-right:20px;
+    }
+    .content h1 {
+        float:none;
+        margin:10px 0px 10px 0px;
+        text-align:left;
+        height:auto !important;
+        width:100%;
+        min-width:100%;
+        max-width:100%;
+        
+    }
+    .content h2, .content h4  {
+        float:none;
+        margin:10px 0px 10px 0px;
+        text-align:left;
+        height:auto !important;
+        width:100%;
+        min-width:100%;
+        max-width:100%;
+        line-height:30px;
+    }    
+    .content p {
+        float:none;
+        margin:10px 0px 0px 0px;
+        text-align:left;
+        min-width:100%;
+        max-width:100%;
+    }  
+    .hp-talk {
+        width:30%;
+        margin-bottom:20px;
+    }
+    .wpcf7-recaptcha {
+        margin:0px;
+    }
+    .testimonial {
+        margin:10px 0px;
+    }
+    .team-job {
+        text-align: center !important;
+        margin-bottom: 10px !important;
+    }
+    /* MENU */
+    .nav, .navbar, .navbar-inverse, .navbar-inner {
+        background-color: rgba(0,0,0,0) !important;
+        background-image: none !important;
+        border:none;
+        border-radius:0px;
+        margin:0px;
+        padding:0px;
+        box-shadow: none;
+        -webkit-box-shadow:none;
+    }
+
+    .menu {
+        padding:5px 0px 0px 0px;
+        margin:0px;
+        background-color:#0077c8;
+        min-height:200px;
+        min-width:150px;
+    }
+
+    .menu li a {
+        color:#fff !important;
+        text-shadow: none !important;
+        font-family: 'Didact Gothic', sans-serif;
+        padding:0px !important;
+        margin:0px 10px;
+        cursor: pointer;
+        font-size:110%;
+    }
+    
+    .sub-arrow {
+        display:block;
+        float:left;
+        color:#fff;
+        margin-top:3px;
+    }
+
+    .menu li a:hover {
+        color:#ffc72c !important;
+        text-shadow: none !important;
+        font-family: 'Didact Gothic', sans-serif;
+        padding:0px !important;
+        margin:0px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size:110%;
+    }
+
+    .menu li {
+        min-height:30px;
+        max-height:30px;
+        list-style-type: none;
+        padding:2px 10px 0px 10px;
+        background-color:#0077c8;
+        float:none;
+        text-align:right;
+    }
+
+    .sub-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index:100;
+        margin-top:-5px;
+        margin-left:-200px;
+        border-bottom:solid 10px #0077c8;
+        display:none;
+    }
+
+    .sub-menu li {
+        display:block;
+        float:none;
+        padding:5px 0px 20px 0px;
+        background-color:#0077c8;
+        width:200px;
+    }
+
+    .sub-menu li a {
+        display:block;
+        padding:0px 0px 10px 0px !important;
+    }
+    .btn-navbar {
+        margin:0px;
+        text-shadow: none !important;
+        background-color:#0077c8 !important;
+        background-image: none !important;
+        background-repeat: no-repeat !important;
+        border-color:#0077c8 !important;
+        margin-right:0px !important;
+        margin-left:0px !important;
+        box-shadow: none !important;
+        border-radius: 0px  !important;
+    }
+    .navbar .btn {
+        margin-top:0px  !important;
+    }
+    #srm_gmp_embed_1 {
+        padding: 0px 0px;
+        margin: 5px 0px !important;
+    }    
+}
+
+@media (max-width: 800px) {
+    #sitename {
+        display:none;
+    }
+    .topbar-title {
+        min-width:120px;
+    }
+    .hp-logo, .hp-logo img {
+        min-width:200px;
+        min-height:200px;
+        width:200px;
+        height:200px;
+        margin:10px auto 0px auto;
+    }
+    .homepage-nav {
+        margin:0px 0px 0px 0px;
+    }    
+}
+
+@media (max-width: 576px) {
+    #sitename {
+        display:none;
+    }
+    .topbar-logo {
+        margin:10px 10px -90px 10px;
+    }
+    .hp-talk {
+        width:100%;
+    }
+    .hp-logo, .hp-logo img {
+        min-width:200px;
+        min-height:200px;
+        width:200px;
+        height:200px;
+        margin:10px auto 0px auto;
+    }
+    .homepage-nav {
+        margin:0px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 320px) {
+    #sitename {
+        display:none;
+    }
+    .topbar-title {
+        min-width:60px;
+    }    
+    .topbar-logo {
+        width:40px;
+        height:40px;
+    }
 }

@@ -15,20 +15,20 @@
         <div class="container" id="fixed-top">
             <div class="container" id="topbar">
                 <div class="topbar-title">
-                    <a href='/'><img src="/wp-content/uploads/2017/06/topbar-logo.png" class='topbar-logo' /><h1><?php bloginfo('name') ?></h1></a>
+                    <a href='/'><img src="/wp-content/uploads/2017/06/topbar-logo.png" class='topbar-logo' /><h1 id='sitename'><?php bloginfo('name') ?></h1></a>
                 </div>
                 <div class="topbar-contact">
                     <i class="fa fa-facebook-square white social" aria-hidden="true"></i>
-                    <i class="fa fa-twitter-square white social" aria-hidden="true"></i>
+                    <a href='http://twitter.com/TW11Osteopaths' target='_blank'><i class="fa fa-twitter-square white social" aria-hidden="true"></i></a>
                 </div>  
                 <div class="topbar-contact">
-                    <a href='tel:02089773295'><img src='/wp-content/uploads/2017/06/call-us.png' class='call-us'/><h3>020 8977 3295</h3></a>
+                    <a href='tel:02089773295'><img src='/wp-content/uploads/2017/06/call-us.png' class='call-us'/><h3 id='tel'>020 8977 3295</h3></a>
                 </div>
                 <div class="topbar-contact">
-                    <a href='/contact-us/'><img src='/wp-content/uploads/2017/06/email-us.png' class='email-us'/><h3>Email</h3></a>
+                    <a href='/contact-us/'><img src='/wp-content/uploads/2017/06/email-us.png' class='email-us'/><h3 id='email'>Email</h3></a>
                 </div>
                 <div class="topbar-contact">
-                    <a href='/contact-us#map'><img src='/wp-content/uploads/2017/06/find-us.png' class='find-us'/><h3>Find us</h3></a>
+                    <a href='/contact-us#map'><img src='/wp-content/uploads/2017/06/find-us.png' class='find-us'/><h3  id='find'>Find us</h3></a>
                 </div>          
             </div>
             <div class="navbar navbar-inverse sitewide-nav">

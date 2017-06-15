@@ -27,9 +27,10 @@
                     jQuery(".sub-menu").css("display","none");
                 });
                 jQuery(".menu-item-has-children").mouseover(function() {
+                    jQuery(this).find("a").css("color","#ffc72c");
                     jQuery(".sub-menu").css("display","none");
                     jQuery(this).find(".sub-menu").css("display","block");
-                    jQuery(this).find(".sub-menu").css("left",jQuery(this).position().top);
+                    jQuery(this).find(".sub-menu").css("top",jQuery(this).position().top);
                     jQuery(this).find(".sub-menu").css("left",jQuery(this).position().left);
                 });
                 jQuery(".sub-menu").mouseout(function() {
@@ -41,10 +42,34 @@
                     to = parseInt(jQuery(this).position().top);
                     newHeight = from - to;
                     jQuery(this).height(newHeight);
-                });                
+                });    
+                jQuery(".menu-item-has-children").each(function() {                
+                    jQuery(this).append('<i class="fa fa-chevron-circle-left sub-arrow" aria-hidden="true"></i>');
+                });
+                    curHeight = jQuery(".featured").height();
+                    newPos = (curHeight - (curHeight * 2) + 296);
+                    if(curHeight <= 600) {
+                        jQuery(".featured").css("top",newPos);
+                        jQuery(".featured").css("width","auto");
+                    } else if(curHeight > 610) {
+                        jQuery(".featured").css("height","auto");
+                        jQuery(".featured").css("width","100%");
+                    }
+                
+                jQuery(window).resize(function() {
+                    curHeight = jQuery(".featured").height();
+                    newPos = (curHeight - (curHeight * 2) + 296);
+                    if(curHeight <= 600) {
+                        jQuery(".featured").css("top",newPos);
+                        jQuery(".featured").css("width","auto");
+                    } else if(curHeight > 610) {
+                        jQuery(".featured").css("height","auto");
+                        jQuery(".featured").css("width","100%");
+                    }
+                });
+
             });
         </script>
-        <?php wp_enqueue_script("jquery"); ?>
         <?php wp_footer(); ?>
     </body>
 </html>

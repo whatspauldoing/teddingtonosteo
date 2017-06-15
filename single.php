@@ -6,10 +6,10 @@
         </div>
         <div class="container yellow-top content">
             <div class="row">
-                <div class="col">
+                <div class="col-sm-12 col-md-3">
                     <img class='big-headshot' src="<?php the_post_thumbnail_url() ?>" />
                 </div>
-                <div class="col">
+                <div class="col-sm-12 col-md-9">
                     <?php the_content(); ?>
                 </div>
             </div>

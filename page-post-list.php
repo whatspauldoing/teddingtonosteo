@@ -15,20 +15,20 @@
                 echo "<div class='row yellow-top' style='margin-bottom:20px;'>";
                 $count = 1;
                 foreach ( $myposts as $post ) : setup_postdata( $post );
-                    echo "<div class='col'>";
+                    echo "<div class='col-sm-12 col-md-3'>";
                     echo '<div class="image-clip"><a href="' . get_the_permalink() . '"><div class="post-thumb" style="background-image:url(\'' . get_the_post_thumbnail_url() . '\');"></div></a></div>';
                     echo '<h3 class="team-member"><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></h3>';
                     echo '<p class="team-job">' . get_post_meta(get_the_ID(),"job_title", true) . '</p>';
                     echo "</div>";
-                    if($count >= 4) {
+                    if($count >= 4 && $count > 1) {
                         echo "</div><div class='row yellow-top' style='margin-bottom:20px; margin-top:20px;'>";
                         $count = 1;
                     } else {
                         $count ++;
                     }
                 endforeach; 
-                while($count <= 4) {
-                    echo "<div class='col'></div>";
+                while($count <= 4 && $count > 1) {
+                    echo "<div class='col-sm-12 col-md-3'></div>";
                     $count ++;
                 }
                 echo "</div>";

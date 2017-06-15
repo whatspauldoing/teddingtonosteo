@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+    <span id='top-image'></span>
     <img class="featured" src="<?php the_post_thumbnail_url() ?>" />
     <div class="container-fluid white page-content">
         <div class="container">
