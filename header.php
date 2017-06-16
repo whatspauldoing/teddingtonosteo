@@ -18,7 +18,7 @@
                     <a href='/'><img src="/wp-content/uploads/2017/06/topbar-logo.png" class='topbar-logo' /><h1 id='sitename'><?php bloginfo('name') ?></h1></a>
                 </div>
                 <div class="topbar-contact">
-                    <i class="fa fa-facebook-square white social" aria-hidden="true"></i>
+                    <a href='https://www.facebook.com/teddingtonosteopaths' target='_blank'><i class="fa fa-facebook-square white social" aria-hidden="true"></i></a>
                     <a href='http://twitter.com/TW11Osteopaths' target='_blank'><i class="fa fa-twitter-square white social" aria-hidden="true"></i></a>
                 </div>  
                 <div class="topbar-contact">
